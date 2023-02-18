@@ -4,16 +4,17 @@ To build the service (create JAR) use following command:
 ```
 ./gradlew build
 ```
-### Run service
+### Run
 Ccommand to run service:
 ```
 java -jar build/libs/drontask-0.1.jar
 ```
 ### Implementation Notes
-#### api requests
+#### REST API requests
 to be written
-#### additional db table
+#### Additional db table
 to be written
-#### battery checker
+#### Battery checker
 to be written
 ### Next steps in task development
+to be written
