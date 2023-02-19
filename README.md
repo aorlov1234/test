@@ -13,6 +13,7 @@ graph TD;
     IDLE-->LOADING;
     LOADING-->LOADED;
     LOADED-->DELIVERING;
+    LOADED-->IDLE;
     LOADING-->IDLE;
 ```
 ### Run
