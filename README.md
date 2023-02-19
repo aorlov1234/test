@@ -7,6 +7,14 @@ To build the service (create JAR) use following command:
 ```
 ./gradlew build
 ```
+### DIAGRAM
+```mermaid
+graph TD;
+    IDLE-->LOADING;
+    LOADING-->LOADED;
+    LOADED-->DELIVERING;
+    LOADING-->IDLE;
+```
 ### Run
 Ccommand to run service:
 ```
