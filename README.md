@@ -1,5 +1,7 @@
 ## Task "Delivering by drones"
-#996633`**the project is not ready for review** #996633
+
+**the project is not ready for review**
+
 ### Build
 To build the service (create JAR) use following command:
 ```
