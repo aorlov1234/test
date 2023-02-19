@@ -1,23 +1,12 @@
 ## Task "Delivering by drones"
-
-**the project is not ready for review**
-
+**The project is not ready for review**
 ### Build
 To build the service (create JAR) use following command:
 ```
 ./gradlew build
 ```
-### DIAGRAM
-```mermaid
-graph TD;
-    IDLE-->LOADING;
-    LOADING-->LOADED;
-    LOADED-->DELIVERING;
-    LOADED-->IDLE;
-    LOADING-->IDLE;
-```
 ### Run
-Ccommand to run service:
+Command to run service:
 ```
 java -jar build/libs/drontask-0.1.jar
 ```
@@ -29,9 +18,20 @@ to be written
 to be written
 #### Battery checker
 to be written
-
+### Dron :: Finite-state machine
+```mermaid
+graph TD;
+    IDLE-->LOADING;
+    LOADING-->LOADED;
+    LOADING-->IDLE;
+    LOADED-->DELIVERING;
+    DELIVERING-->DELIVERED;
+    DELIVERED-->RETURNING;
+```
 ### Next tasks in the project development (TODO)
-- define logs dir relative to application dir (not to the current dir)
-- define BatteryChecker interval in app properties
-- create command **shutdown** service ;
-- handle **kill** service pid;
+- **exception handling** and understandable detailed messages when errors occur during entity validation ( maxweight > 600, battery > 100, ....);
+- define logs dir relative to application jar path (not to the current dir);
+- define BatteryChecker interval in app properties;
+- create command **shutdown** service;
+- handle **kill** service PID;
+- jUnit tests;
