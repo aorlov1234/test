@@ -19,8 +19,7 @@ to be written
 #### Battery checker
 to be written
 
-### Next steps in task development
-to be written
+### Next tasks in the project development (TODO)
 - define logs dir relative to application dir (not to the current dir)
 - define BatteryChecker interval in app properties
 - create command **shutdown** service ;
