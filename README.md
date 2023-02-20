@@ -13,7 +13,16 @@ java -jar build/libs/drontask-0.1.jar
 DB H2 console available at 'http://localhost:8080/api/v1/h2-console'  
 ### Implementation Notes
 #### REST API requests
-to be written
+##### Get a list of drones available for delivery parcel with a total weight = <weight-in-grams> 
+http://localhost:8080/api/v1/dron/available?weight=450
+result:
+```
+[
+{"id": 8,"imei": "SERIALNUMBER0008","model": "Heavyweight","maxweight": 500,"battery": 30,"state": "IDLE"}
+. . .
+{"id": 8,"imei": "SERIALNUMBER0018","model": "Heavyweight","maxweight": 450,"battery": 80,"state": "IDLE"}
+]
+```
 #### Additional db table
 to be written
 #### Battery checker
