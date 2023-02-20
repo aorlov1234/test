@@ -63,7 +63,7 @@ Errors
 #### Additional entities
 We need to consider creating additional entities
 - **Order** - date; drone selected for delivery; parcel id; dispatcher id; and others;
-- **Parcel** - a list of elements and their quantities
+- **Parcel** - a list of items and their quantities
 #### Battery checker
 Drone charge audits are performed every minute. Drones with a charge less than **${dron.battery.min}** (set in application.properties) are logged.
 ### Dron :: Finite-state machine
